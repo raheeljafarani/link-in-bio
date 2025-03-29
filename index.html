@@ -3,6 +3,16 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Knewave&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"></script>
+
   </head>
 
   <style>
@@ -15,9 +25,11 @@
   <body>
     <!-- Your content will go here-->
     <style>
+      /*
       * {
         border: 1px red dashed;
       }
+        */
 
       .my_face{
         width: 128px;
@@ -42,15 +54,23 @@
         padding-top: 40px;
         padding-bottom: 40px;
         background: linear-gradient(90deg, #b70c00, #c3352c, #cb514f, #d16f53, #cc9343, #b6b74b); /* made at https://learnui.design/tools/gradient-generator.html */
-        color: rgba(255, 255, 255, 1.0)
-            }
+        color: rgba(255, 255, 255, 1.0);
+        font-family: "Knewave";
 
       a{
         color: rgba(255, 255, 255, 1.0);
+        text-decoration: none;
       }
       
       .f1_data{
-        background-color: rgba(245, 228, 137, 0.65)
+        background-color: rgba(245, 228, 137, 0.65);
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        border-radius: 1000px;
+        padding: 5px;
+        padding-right: 53px;
+        box-shadow: 4px 4px 10px 0px rgba(122, 32, 122, 0.5);
       }
       
       .main_container{
@@ -66,6 +86,9 @@
       .name_row{
         margin-bottom: 30px;
         text-align: center;
+        font-family: "Merriweather";
+        font-size: 25px;
+        font-weight: 800;
       }
 
       .social_icons_row{
@@ -73,13 +96,7 @@
         display: flex;
         justify-content: space-around;
       }
-      
-      .f1_data{
-        margin-bottom: 20px;
-        display: flex;
-        align-items: center;
-      }
-      
+          
       .linktext{
         text-align: center;
         flex-grow: 1;
@@ -96,14 +113,16 @@
 
      <div class="social_icons_row"> 
         <a href="https://www.linkedin.com/in/raheeljafarani/" target="_blank">
-          LinkedIn
+          <i class="fa-brands fa-linkedin"></i>          LinkedIn
         </a>
         
         <a href="https://www.instagram.com/raheel_jafarani/" target="_blank">
+          <i class="fa-brands fa-instagram"></i>
           Instagram
         </a>
         
         <a href="https://github.com/raheeljafarani" target="_blank">
+          <i class="fa-brands fa-github-alt"></i>
           GitHub
         </a>
       </div>
