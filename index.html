@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
 
   <style>
@@ -17,17 +18,71 @@
       * {
         border: 1px red dashed;
       }
+
       .my_face{
         width: 128px;
         height: 128px;
         object-fit: cover;
         border-radius: 25px;
       }
+
       .thumbnail{
         width: 48px;
         height: 48px;
         border-radius: 48px;
         object-fit: cover;
+      }
+
+      html{
+        min-height: 100%;
+      }
+
+      body {
+        min-height: 100%;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        background: linear-gradient(90deg, #b70c00, #c3352c, #cb514f, #d16f53, #cc9343, #b6b74b); /* made at https://learnui.design/tools/gradient-generator.html */
+        color: rgba(255, 255, 255, 1.0)
+            }
+
+      a{
+        color: rgba(255, 255, 255, 1.0);
+      }
+      
+      .f1_data{
+        background-color: rgba(245, 228, 137, 0.65)
+      }
+      
+      .main_container{
+        max-width: 640px;
+        margin: auto;
+      }
+
+      .image_row{
+        margin-bottom: 20px;
+        text-align: center;
+      }
+
+      .name_row{
+        margin-bottom: 30px;
+        text-align: center;
+      }
+
+      .social_icons_row{
+        margin-bottom: 30px;
+        display: flex;
+        justify-content: space-around;
+      }
+      
+      .f1_data{
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+      }
+      
+      .linktext{
+        text-align: center;
+        flex-grow: 1;
       }
     </style>
      <div class="main_container"> 
@@ -54,10 +109,10 @@
       </div>
       
      <div class="links_row"> 
-      <div class="F1 data">
+      <div class="f1_data">
         <img class="thumbnail" src="F1 car link.png">
 
-        <a href="https://f1-analysis.com/" target="_blank">
+        <a class="linktext" href="https://f1-analysis.com/" target="_blank">
           F1 Data Analysis
         </a>
       </div>
